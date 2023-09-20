@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/devchallenges.png" type="image/x-icon">
+    <script
+      src="https://kit.fontawesome.com/f389306986.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Interior Consultant</title>
+  </head>
+  <body class="bg-[#181719]">
+    
+    <div
+      class="py-4 px-3 -z-10 flex-col flex gap-5 min-h-screen max-w-[1440px] mx-auto"
+    >
+    <div class=" fixed inset-0 -translate-x-full flex opacity-0 flex-col z-10 py-4 px-3 text-white bg-[#181719] transition-transform md:hidden"  id="mobile_navbar">
+      <i class="fa-solid fa-x self-end" id="cross"></i>
+      <ul class="flex flex-col gap-8 text-lg flex-grow justify-center items-center">
+        <li class="w-fit font-bold border-b-4">Home</li>
+        <li class="w-fit font-medium">Collection</li>
+        <li class="w-fit font-medium">About</li>
+        <li class="w-fit font-medium">contact</li>
+      </ul>
+    </div>
+
+      <header>
+        <nav class="flex justify-between items-center">
+          <a
+            href="#"
+            class="border text-sm px-1 font-Crimson border-white text-white"
+            >This Interior</a
+          >
+          <i class="fa-solid fa-bars md:hidden hover:cursor-pointer" id="ham_burger" style="color: white"></i>
+          <ul
+            class="gap-[min(5vw,60px)] items-center text-lg hidden md:flex text-white"
+          >
+            <li class="font-bold border-b-4">Home</li>
+            <li class="">Collection</li>
+            <li class="">About</li>
+            <li class="">Contact</li>
+          </ul>
+        </nav>
+      </header>
+      <main class="md:flex md:items-center md:justify-between flex-grow">
+        <section class="flex flex-col gap-5">
+          <h1 class="font-Lora text-4xl md:text-5xl font-medium text-white">
+            Modern interior
+          </h1>
+          <p
+            class="font-Montserrat md:text-2xl md:leading-7 max-w-[28ch] font-light text-white text-sm"
+          >
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & eco-services.
+          </p>
+          <button
+            class="flex items-baseline md:text-lg w-fit gap-2 text-white text-sm font-bold font-Montserrat"
+          >
+            <div class="">Read more</div>
+            <i class="fa-arrow-right fa-solid"></i>
+          </button>
+        </section>
+        <section class="my-5">
+          <div class="relative max-w-[737px]">
+            <img src="./assets/photo1.png" alt="interior" class="relative" />
+            <div
+              class="absolute bottom-0 translate-y-1/2 bg-[#181719] right-4 px-6 py-3 flex flex-col gap-4 shadow-[0px_0px_4px_4px_rgba(0,0,0,.25)]"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  src="./assets/photo2.png"
+                  class="rounded-full w-9 h-9"
+                  alt=""
+                />
+                <div class="font-Montserrat">
+                  <h3 class="text-white text-xs md:text-sm">Aliza Webber</h3>
+                  <p class="text-[#828282] text-[10px] md:text-xs">
+                    interior designer
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="font-Lora text-lg md:text-2xl max-w-[16ch] text-white"
+              >
+                Designed in 2020 by Aliza Webber
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="flex items-end justify-center text-sm">
+        <p class="text-[#A9A9A9] text-center font-medium">
+          created by <span class="font-bold underline">Akash kumar</span> -
+          devChallenges.io
+        </p>
+      </footer>
+    </div>
+   
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
